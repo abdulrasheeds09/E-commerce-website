@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYCART</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1447/1447876.png">
+<style>
+  body{
+    background-color:dimgray;
+  }
+
+.eg,.acc,.pf,.game,.cloth,.book{
+  color:white;
+}
+.eg:hover{
+  background: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-tech-products-2019-1560540378.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*') ;
+  background-size:auto;
+  color:black;
+  
+}
+.acc:hover{
+  background: url('https://www.buybestproducts.in/wp-content/uploads/2020/07/best-watches-for-women-india.png') ;
+  background-size:auto;
+  color:black;
+  
+}
+.pf:hover{
+  background: url('https://cdn.shopify.com/s/files/1/0419/9278/1992/articles/kibble_image_2500x.jpg?v=1593094520');
+  background-size:auto;
+  color:black;
+}
+
+.game:hover{background: url('https://noobtuts.com/content/unity/2d-super-mario-bros-game/bricks_mechanics.gif') ;
+background-size:auto;
+  color:black;};
+
+.cloth:hover{
+background:url('https://th.bing.com/th/id/R.2e19a07fd917761d2b3b2930a5e9b35f?rik=0G%2bEiy%2fEa%2bhGqA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fwp1866286.jpg&ehk=u%2fss72tP8zyGCnqf%2bEKtf5n6cCy%2fUAb%2bhy8zvEMYi0Q%3d&risl=&pid=ImgRaw&r=0');
+background-size:auto;
+color:black;
+}
+
+.book:hover{
+  background: url('https://th.bing.com/th/id/OIP.SlwyvOh81H5G08rYfpg7bwHaE8?pid=ImgDet&w=1200&h=800&rs=1');
+  background-size:auto;
+  color:black;
+}
+</style>
+</head>
+<body>
+  
+    <!--head-->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="https://cdn-icons-png.flaticon.com/512/1447/1447876.png" width="30" height="30" alt="pycart icon"> PYCART</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">HOME<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">ABOUT US</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link" href="ourservice.html">OUR SERVICES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">CART</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                MORE
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="login.html">LOGIN</a>
+                <a class="dropdown-item" href="signup.html">SIGN UP</a>
+                
+                <a class="dropdown-item" href="downloadourapp.html">DOWNLOAD OUR APP</a>
+                <a class="dropdown-item" href="customercare.html">CUSTOMER CARE 24/7</a>
+              </div>
+            </li>
+            
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+           
+          </form>
+        </div>
+      </nav>
+
+      <!--SLIDES-->
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://assets.pandaily.com/uploads/2020/06/online-shopping-apps.jpg" class="d-block w-100" alt="SHOPPING" height="700px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://alteragents.com/wp-content/uploads/2021/06/169shopping-1170x600-1.jpg" class="d-block w-100" alt="LAPTOP" height="700px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://i1.wp.com/www.kidsworldfun.com/blog/wp-content/uploads/2017/08/smart-shopping.jpg?fit=1920%2C1080&ssl=1" class="d-block w-100" alt="DRESS SHOPPING" height="700px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://dyj6m7a8zwqp4.cloudfront.net/rendition/874601345621/ab5fbfba5dc54202983d10bfb6473098/-TwebHeader_16x9" class="d-block w-100" alt="PET FOOD" height="700px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/R.5ba7403926296cf24ae06c0a35b2f4ea?rik=CCCSlKt0AePL6w&riu=http%3a%2f%2fadriennelacava.com%2fwp-content%2fuploads%2f2013%2f10%2fDepositphotos_3699706_m.jpg&ehk=EBCXF0j0U63cnRZwojj9QwoP4PSgzUaf%2bEy8Pf%2fXoAM%3d&risl=1&pid=ImgRaw&r=0" class="d-block w-100" alt="BOOKS" height="700px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.noobie.com/wp-content/uploads/2019/04/2awzIErSaG0-Bearded-man-wearing-headphone-wireless-headphones-us-FEATURE.jpg" class="d-block w-100" alt="HEADPHONE" height="700px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </button>
+      </div><br><br>
+      <!--products-->
+
+      <form action="" onsubmit="return click()">
+       
+ <h3 class="eg">Electronics Gadgets</h3> <br>
+
+      <div class="container-fluid" style="justify-content:space-between;">
+        <div class="row"> &nbsp;&nbsp;
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://th.bing.com/th/id/OIP.OctJq06i6wIxTXsGBFIx9AHaHa?pid=ImgDet&rs=1" class="card-img-top" alt="headphones"height=200px>
+            <div class="card-body">
+              <h5 class="card-title">KBL HEADPHONES</h5>
+              <p class="card-text"><strike>$99</strike>$49</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;" id="c1">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://s3.amazonaws.com/iwm-ebay/images/variations/iPad+Pro+12.9+(3rd+Gen.).jpg" class="card-img-top" alt="MY PAD" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">MY PAD</h5>
+              <p class="card-text"><strike>$399</strike>$299</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+          <div class="col-mid-3">
+            <div class="card" style="width: 18rem;">
+              <img src="https://coversdeal.com/wp-content/uploads/2021/11/AppleiPhone13ProMax-10-2.jpg" class="card-img-top" alt="pine apple phone" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">PINEAPPLE PHONE </h5>
+                <p class="card-text"><strike>$899</strike>$699</p>
+                <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+              </div>
+            </div>
+          </div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://th.bing.com/th/id/OIP.cHqujGCG3dIUcJGxn1GDRAHaFj?pid=ImgDet&rs=1" class="card-img-top" alt="BELL LAPTOP" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">BELL LAPTOP</h5>
+              <p class="card-text"><strike>$499</strike>$399</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+              <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://th.bing.com/th/id/OIP.D4M-7d896ZGoiSwi0hHU4wHaE7?pid=ImgDet&rs=1 class="class="card-img-top"  alt="PP LAPTOP" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">PP LAPTOP</h5>
+              <p class="card-text"><strike>$699</strike>$499</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>
+
+        </div>
+      </div> <br><br>
+    </form>
+    
+    <h3 class="acc">Accessories</h3><br>
+      <!--PRODUCT 2ND ROW-->
+      <div class="container-fluid" style="justify-content:space-between;">
+        <div class="row"> &nbsp;&nbsp;&nbsp;
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://5.imimg.com/data5/TT/RC/MY-71045813/leather-purse-500x500.jpg" class="card-img-top" alt="leather purse"height=200px>
+            <div class="card-body">
+              <h5 class="card-title">LEATHER PURSE</h5>
+              <p class="card-text"><strike>$59</strike>$39</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://m.media-amazon.com/images/I/41AsVmtA18L.jpg" class="card-img-top" alt="HANDBAG" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">HANDBAG</h5>
+              <p class="card-text"><strike>$49</strike>$39</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+          <div class="col-mid-3">
+            <div class="card" style="width: 18rem;">
+              <img src="https://luxurywatchesusa.com/wp-content/uploads/2019/08/116515lnch.jpg" class="card-img-top" alt="relax watch" height="200px" >
+              <div class="card-body">
+                <h5 class="card-title">RELAX WATCH</h5>
+                <p class="card-text"><strike>$299</strike>$249</p>
+                <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+              </div>
+            </div>
+          </div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://th.bing.com/th/id/OIP.ygyauUGBcoeiRg7tt-MUTgHaHa?pid=ImgDet&rs=1" class="card-img-top" alt="HANDY MAKEUP KIT" height="200px" >
+            <div class="card-body">
+              <h5 class="card-title"></h5>HANDY MAKEUP KIT</h5>
+              <p class="card-text"><strike>$199</strike>$149</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+              <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://th.bing.com/th/id/OIP.jGUmulwaZJrhmVykZi59aQHaIq?pid=ImgDet&rs=1"class="card-img-top"  alt="pamo shoe" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">PAMO SHOES</h5>
+              <p class="card-text"><strike>$119</strike>$79</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>
+
+        </div>
+      </div> <br><br>
+
+      <!--3RD ROW PRODUCT-->
+      <h3 class="pf">Pet Food</h3><br>
+      <div class="container-fluid" style="justify-content:space-between;">
+        <div class="row"> &nbsp;&nbsp;&nbsp;
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://i5.walmartimages.com/asr/619627cc-b51e-4046-a9af-dbc40fab4fa0_1.2091bcb483c87219b2494ab1a028af33.jpeg" class="card-img-top" alt="PARROT FOOD" height=200px>
+            <div class="card-body">
+              <h5 class="card-title">PARROT FOOD</h5>
+              <p class="card-text"><strike>$29</strike>$15</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://i5.walmartimages.ca/images/Enlarge/778/288/999999-46798778288.jpg" class="card-img-top" alt="fish food" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">FISH FOOD</h5>
+              <p class="card-text"><strike>$29</strike>$19</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+          <div class="col-mid-3">
+            <div class="card" style="width: 18rem;">
+              <img src="https://tezzdelivery.r.worldssl.net/5128-large_default/meo-cat-food-mackerel-450g.jpg" class="card-img-top" alt="MEO CAT FOOD" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">MEO CAT FOOD</h5>
+                <p class="card-text"><strike>$149</strike>$99</p>
+                <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+              </div>
+            </div>
+          </div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://driftbasket.com/wp-content/uploads/2018/10/pedegree-adult-3kg.jpg" class="card-img-top" alt="PEDIGREE DOG FOOD" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">PEDIGREE DOG FOOD</h5>
+              <p class="card-text"><strike>$149</strike>$129</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+              <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://www.petsfriend.co.in/media/product/149a.jpg"class="card-img-top" alt="CAT GRAVY FOOD" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">CAT GRAVY FOOD</h5>
+              <p class="card-text"><strike>$129</strike>$89</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>
+
+        </div>
+      </div><br><br>
+      <!--4th row product-->
+
+      <h3 class="game">Gaming</h3><br>
+      <div class="container-fluid" style="justify-content:space-between;">
+        <div class="row"> &nbsp;&nbsp;&nbsp;
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://www.bhphotovideo.com/images/images2000x2000/Logitech_920_002232_G110_Gaming_Keyboard_686289.jpg" class="card-img-top" alt="gaming keyboard"height=200px>
+            <div class="card-body">
+              <h5 class="card-title">GAMING KEYBOARD</h5>
+              <p class="card-text"><strike>$199</strike>$99</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://i5.walmartimages.com/asr/665a54b1-9595-4206-bb99-6eb11fc8006e.ed6c4535cf1db99883dc3a79d7fce9d9.jpeg" class="card-img-top" alt="GAMING MOUSE" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">GAMING MOUSE</h5>
+              <p class="card-text"><strike>$149</strike>$79</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+          <div class="col-mid-3">
+            <div class="card" style="width: 18rem;">
+              <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1605303059-PlayStation-5.jpg?crop=1xw:1xh;center,top" class="card-img-top" alt="STATION PLAY" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">STATION PLAY</h5>
+                <p class="card-text"><strike>$699</strike>$599</p>
+                <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+              </div>
+            </div>
+          </div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://i5.walmartimages.com/asr/25c1b353-80b3-45d2-8f49-9929872bc44b_1.7e4a1dc11b3a0253669b05609d701e68.jpeg" class="card-img-top" alt="GAMING CHAIR" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">GAMING CHAIR</h5>
+              <p class="card-text"><strike>$3999</strike>$249</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+              <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://www.bhphotovideo.com/images/images2500x2500/microsoft_zq9_00041_xbox_one_s_gaming_1260886.jpg" class="card-img-top" alt="Y BOX" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">Y BOX</h5>
+              <p class="card-text"><strike>$499</strike>$349</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>
+
+        </div>
+      </div><br><br>
+
+      <!--5th row product-->
+      <h3 class="cloth">Clothes</h3><br>
+ 
+      <div class="container-fluid" style="justify-content:space-between;">
+        <div class="row"> &nbsp;&nbsp;&nbsp;
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://i.pinimg.com/originals/cf/de/23/cfde236d5c874aa5cfe474640d1fd37e.jpg" class="card-img-top" alt="abibas t shirt"height=200px>
+            <div class="card-body">
+              <h5 class="card-title">ABIBAS T SHIRT</h5>
+              <p class="card-text"><strike>$99</strike>$79</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://th.bing.com/th/id/OIP.Tr0-ThvlaFIgoeZ1IdlxsQHaJp?pid=ImgDet&rs=1" class="card-img-top" alt="BENIM JEANS" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">BENIM JEANS</h5>
+              <p class="card-text"><strike>$179</strike>$149</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+          <div class="col-mid-3">
+            <div class="card" style="width: 18rem;">
+              <img src="https://th.bing.com/th/id/OIP.RolEzUOlgNXTiX98r1EHzwHaJE?pid=ImgDet&w=1320&h=1616&rs=1" class="card-img-top" alt="black shirt" height="200px">
+              <div class="card-body">
+                <h5 class="card-title">BLACK SHIRT</h5>
+                <p class="card-text"><strike>$199</strike>$169</p>
+                <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+              </div>
+            </div>
+          </div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://cdn.shopclues.com/images/detailed/77082/132872691-77082670-1515255710.jpg" class="card-img-top" alt="CHUDIDHAAR" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">CHUDIDHAAR</h5>
+              <p class="card-text"><strike>$199</strike>$189</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+              <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://i.pinimg.com/originals/d5/fd/77/d5fd776ecf65e0f308cbf406fd398c49.jpg" class="card-img-top" alt="SAREE" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">SAREE</h5>
+              <p class="card-text"><strike>$299</strike>$229</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>
+
+        </div>
+      </div><br><br>
+      <!--6th row product-->
+      <h3 class="book">Books</h3><br>
+      <div class="container-fluid" style="justify-content:space-between;">
+        <div class="row"> &nbsp;&nbsp;&nbsp;
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://media.karousell.com/media/photos/products/2021/6/30/harry_potter_box_set_18_booksf_1625032668_be86e159.jpg" class="card-img-top" alt="HARRYPOTTER BOOKSET"height=200px>
+            <div class="card-body">
+              <h5 class="card-title">HARRYPOTTER BOOKSET</h5>
+              <p class="card-text"><strike>$199</strike>$149</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://cdn.shopify.com/s/files/1/0058/7078/0483/products/00114199-400x400_grande.jpeg?v=1596606044" class="card-img-top" alt="IKIGAI BOOK" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">IKIGAI</h5>
+              <p class="card-text"><strike>$29</strike>$19</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+          <div class="col-mid-3">
+            <div class="card" style="width: 18rem;">
+              <img src="https://www.exoticindia.com/books-2019/nzn416.jpg" class="card-img-top" alt="PONNIYIN SELVAN BOOKSET" height="175px">
+              <div class="card-body">
+                <h5 class="card-title">PONNIYIN SELVAN BOOKSET </h5>
+                <p class="card-text"><strike>$149</strike>$99</p>
+                <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+              </div>
+            </div>
+          </div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://i.pinimg.com/originals/1a/7a/15/1a7a156b5afa33ec765abc27654d3652.jpg" class="card-img-top" alt="The Girl in Room 105" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">The girl in room 105</h5>
+              <p class="card-text"><strike>$49</strike>$39</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+              <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>&nbsp;
+
+          <div class="col-mid-3"><div class="card" style="width: 18rem;">
+            <img src="https://cdn.shopify.com/s/files/1/0252/3362/1082/products/IMG_2088_800x.jpg?v=1602154329"class="card-img-top" alt="PERCY JACKSON BOOKSET" height="200px">
+            <div class="card-body">
+              <h5 class="card-title">PERCY JACKSON BOOKSET</h5>
+              <p class="card-text"><strike>$199</strike>$149</p>
+              <a href="#" class="btn btn-dark">BUY </a>
+                <a href="#" class="btn btn-dark" style="float: right;">ADD TO CART</a>
+            </div>
+          </div></div>
+
+        </div>
+      </div><br><br>
+
+
+  
+        <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="www.facebook.com" role="button"
+        > <img src="https://cdn-icons-png.flaticon.com/512/20/20837.png" alt="facebook" height="25px" width="25px"> <i class="fab fa-facebook-f"></i
+      ></a>
+
+       <!-- Twitter -->
+       <a class="btn btn-outline-light btn-floating m-1" href="www.twitter.com" role="button"
+       > <img src="https://cdn-icons-png.flaticon.com/512/2111/2111819.png" alt="twitter"  height="25px" width="25px" ><i class="fab fa-twitter"></i
+     ></a>
+
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><img src="https://cdn-icons-png.flaticon.com/512/104/104093.png" alt="Google"  height="25px" width="25px"> <i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
+        > <img src="https://cdn-icons-png.flaticon.com/512/1384/1384031.png" alt="Instagram"  height="25px" width="25px"><i class="fab fa-instagram"></i
+      ></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="https://in.linkedin.com/" role="button"
+      > <img src="https://cdn-icons-png.flaticon.com/512/3536/3536569.png" alt="linkedin"  height="25px" width="25px"><i class="fab fa-instagram"></i
+    ></a>
+
+    
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="email1" placeholder="Email address"class="form-control"  />
+              <label class="form-label" for="form5Example21"></label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4"  onclick="subscribe()">
+              SUBSCRIBE
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">CONNECT WITH US</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://wwww.facebook.com" class="text-white">Facebook</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=en-in" class="text-white">Twitter</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" class="text-white">Instagram</a>
+            </li>
+            <li>
+              <a href="https://in.linkedin.com/" class="text-white">Linkedin</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/" class="text-white">Youtube</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">HELP</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Payments</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Shipping</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Cancellation & Returns</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">FAQ</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Report Infringement</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">GET KNOW US</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="mailto:" class="text-white">Contact Us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">About us</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Careers</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Corporate Information</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a class="text-white">Mail Us:</a> <br>
+              Pycart ,327,5th Street Gandhipuram,Coimbatore-641012
+             
+            </li>
+            <li>
+              <a href="#!" class="text-white">Become a  Seller</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Advertise</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Help Center</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+  <center style="align-content:center ;"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31330.242388936025!2d76.94989764498239!3d11.017583798100109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba85855910aed83%3A0x80875de5cd370a9d!2sGandhipuram%2C%20Tamil%20Nadu%20641012!5e0!3m2!1sen!2sin!4v1668852607551!5m2!1sen!2sin" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="index.html">pycart.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+     <script>
+    function subscribe(){
+      email1=document.getElementById('email1').value;
+     
+      if(email1==""){
+          alert("PLEASE ENTER THE EMAIL ID");
+          return false;
+      }}
+
+     </script>
+</body>
+</html>
